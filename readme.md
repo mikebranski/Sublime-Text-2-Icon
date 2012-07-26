@@ -39,3 +39,13 @@ Download [ResEdit](http://www.resedit.net/)
 
 ---
 * The Program Files folder is protected. You need to move the exe out of this folder to edit it.
+
+Installation (Ubuntu)
+------------
+
+1.  [Download this repository](https://github.com/dmatarazzo/Sublime-Text-2-Icon/zipball/master)
+2.  Open a terminal, `cd` to wherever you downloaded the repository to.
+3.  Unzip the repository: `unzip REPOSOITORY_NAME.zip`
+4.  `cd` into the repository folder.
+5.  Run the Ubuntu Installation Script `./ubuntu_replace_icons`
+6.  Ha! Run it as root.
