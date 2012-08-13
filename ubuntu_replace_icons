@@ -12,7 +12,7 @@ if [ "$(whoami)" != "root" ]; then
     exit 1
 fi
 
-# The direction this script is running in
+# The directory this script is running in
 THIS_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Creating Sublime Text 2 icon set for Ubuntu"
