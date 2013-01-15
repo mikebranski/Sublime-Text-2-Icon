@@ -12,6 +12,14 @@ if [ "$(whoami)" != "root" ]; then
     exit 1
 fi
 
+# Check if imagemagick is installed. If not, install.
+problem=$(dpkg -s imagemagick|grep installed)
+    echo Checking for imagemagick: $problem
+    if [ "" == "$problem" ]; then
+        echo "Imagemagick not installed. Installing imagemagick"
+        sudo apt-get --force-yes --yes install imagemagick
+fi
+
 # The directory this script is running in
 THIS_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
