@@ -9,7 +9,6 @@ THIS_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Replace the app icon (assumes default location, requires sudo)
 sudo cp "$THIS_DIR/Sublime Text.icns" "$SUBLIME_PATH/$SUBLIME_NAME/Contents/Resources/Sublime Text.icns"
-sudo cp $THIS_DIR/Document\ Icons/*.icns "$SUBLIME_PATH/$SUBLIME_NAME/Contents/Resources/"
 
 SUBLIME_COPY="Sublime Text COPY"
 
